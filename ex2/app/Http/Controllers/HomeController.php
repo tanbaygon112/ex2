@@ -6,36 +6,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index()
-    {
 
-    }
-    public function index()
-    {
-
-    }
-    public function show()
-    {
-
-    }
-    public function create()
-    {
-
-    }
-    public function store()
-    {
-
-    }
-    public function edit()
-    {
-
-    }
-    public function update()
-    {
-
-    }
-    public function delete()
-    {
-
-
+public function index()
+{
+    $data = [
+        "name" => "Chanon Namkow",
+        "age" => 30,
+    ];
+    return view("welcome", $data);
+}
 }
